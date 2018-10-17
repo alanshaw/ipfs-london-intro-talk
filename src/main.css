@@ -38,7 +38,7 @@ h1, h2, h3, h4 {
 
 [data-id=home] {
   background-image: url('img/stars.png'), linear-gradient(to bottom, #041727 0%,#043b55 100%);
-  animation: slide 360s ease-in-out infinite;
+  animation: slide 360s linear infinite;
 }
 
 @keyframes slide {

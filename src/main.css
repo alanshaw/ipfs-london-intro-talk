@@ -1,0 +1,54 @@
+@import "tachyons";
+@import "ipfs-css";
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  font-weight: lighter;
+  font-size: 60px;
+  font-family: avenir next, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: center;
+  color: white;
+  background: linear-gradient(to bottom, #041727 0%,#043b55 100%);
+  overflow:hidden;
+}
+
+section code {
+  font-family: "Envy Code R", "Courier New", Courier, monospace;
+}
+
+section img {
+  max-height: 100%;
+}
+
+section ul {
+  text-align: left;
+  max-width: 80%;
+  margin:0 auto;
+}
+
+h1, h2, h3, h4 {
+  margin:0;
+}
+
+[data-id=home] {
+  background-image: url('img/stars.png'), linear-gradient(to bottom, #041727 0%,#043b55 100%);
+  animation: slide 360s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0;
+  }
+  50% {
+    background-position: -2000px;
+  }
+  100% {
+    background-position: 0;
+  }
+}
